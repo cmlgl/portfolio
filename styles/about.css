@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    font-size: 62.5%;
+
+    --font-color: #fff;
+    --background: #000;
+    --draft: #7B14BB;
+    --footer: #5F0D92;
+}
+
+
+body {
+    box-sizing: border-box;
+
+    color: var(--font-color);
+    background: var(--background);
+}
+
+
+/* HEADER */
+
+.epigrafe {
+    padding: 2% 0 0 15%;
+}
+
+.lista {
+    font-family: "Poppins";
+    color: var(--draft);
+
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+header nav {
+    display: flex;
+    gap: 8rem;
+}
+
+
+/* MAIN */
+
+.meio {
+    gap: 8.2rem;
+    display: flex;
+    padding: 6.2% 15%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.objetos {
+    gap: 4rem;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: var(--font-color);
+    font-family: "Poppins";
+    font-size: 3.3rem;
+}
+
+p {
+    font-family: "JetBrains Mono";
+    color: #ffffffd8;
+    font-size: 2.3rem;
+}
+
+.foto {
+    width: 44%;
+    border-radius: 1.5rem;
+}
+
+
+/* FOOTER */
+
+.rodape {
+    font-family: "Poppins";
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 400;
+
+    color: #000;
+    padding: 2.4rem;
+    background: var(--footer);
+}
+
+
+@media (max-width: 1200px) {
+    .epigrafe {
+        padding: 10%;
+    }
+
+    header nav {
+        justify-content: center;
+    }
+
+    .meio {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .objetos {
+        width: auto;
+    }
+}

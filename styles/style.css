@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    font-size: 62.5%;
+
+    --font-color: #fff;
+    --background: #000;
+    --footer: #5F0D92;
+}
+
+
+body {
+    box-sizing: border-box;
+
+    color: var(--font-color);
+    background: var(--background);
+}
+
+strong {
+    color: #860AD3;
+}
+
+
+/* HEADER */
+
+.menu {
+    font-family: "Poppins";
+    color: #7B14BB;
+
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.cabecalho {
+    padding: 2% 0 0 15%;
+}
+
+.navegacao {
+    gap: 8rem;
+    display: flex;
+}
+
+
+/* MAIN */
+
+.conteudos {
+    gap: 8.2rem;
+    display: flex;
+
+    padding: 8.5% 15%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.secao {
+    gap: 4rem;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: var(--font-color);
+    font-family: "Poppins";
+    font-size: 3.4rem;
+}
+
+p {
+    font-family: "JetBrains Mono";
+    color: #ffffffd8;
+    font-size: 2.4rem;
+}
+
+.subtitulo {
+    font-family: "Poppins";
+    font-size: 2.23rem;
+    font-weight: 490;
+}
+
+.links {
+    gap: 3.2rem;
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rede {
+    font-family: "JetBrains Mono";
+    color: var(--font-color);
+    text-decoration: none;
+    font-size: 1.95rem;
+
+    border: 2px solid #650D9C;
+    border-radius: .8rem;
+    font-weight: 480;
+    
+    gap: 2rem;
+    width: 40%;
+    padding: 2.15rem 0;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.rede:hover {
+    background: #383838;
+}
+
+.profile {
+    width: 44%;
+    border-radius: 1.5rem;
+}
+
+
+/* FOOTER */
+
+.rodape {
+    font-family: "Poppins";
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 400;
+
+    color: #000;
+    padding: 2.4rem;
+    background: var(--footer);
+}
+
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .navegacao {
+        justify-content: center;
+    }
+
+    .conteudos {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .secao {
+        width: auto;
+    }
+}
